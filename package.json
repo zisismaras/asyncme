@@ -1,0 +1,9 @@
+{
+  "name": "asyncme",
+  "version": "0.1.0",
+  "description": "Turn blocking code to asynchronous functions",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Zisis Maras",
+  "license": "MIT"
+}
