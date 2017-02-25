@@ -41,7 +41,8 @@ The internal pool of workers (child processes).
 There are many examples in the `examples` folder showing many possible situations like running parallel tasks, throwing errors, killing the workers and limitations.
 #### Notes
 The workers are child processes spawned with [process.fork()](https://nodejs.org/api/child_process.html#child_process_child_process_fork_modulepath_args_options) and the communication is made using standard node process messaging.  
-The task functions are serialized and then executed on the child process using the [Function constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) which will practically `eval()` the function, so keep that in mind and don't pass unsafe code.
+The task functions are serialized and then executed on the child process using the [Function constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) which will practically `eval()` the function, so keep that in mind and don't pass unsafe code.  
+Tested on the currect node LTS (v6.9.5). Uses many es6 features so older node versions might not work.  
 #### Limitations
 Can't use `require()` inside the tasks.  
 External scope is not transfered.  
