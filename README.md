@@ -22,7 +22,7 @@ console.log("I am unblocked!");
 ```
 
 #### Options
-`poolSize` How many workers to spawn. Defaults to cpu core count. Pass `0` for none.
+`poolSize` How many workers to spawn. Defaults to cpu core count. Pass `0` for none.  
 `disposable` Kill each worker as soon as its work is completed. Defaults to `false`
 #### Methods
 `run(task<function>, [...args]) => <Promise>`  
@@ -32,7 +32,7 @@ Always return the result from inside the function.
 Add workers on demand. Defaults to `1`. Returns the instance.  
 `exit() => <Promise>`  
 Gracefully kill all the workers when their work is completed. The promise is resolved when all the workers have been killed.
-`exitNow() => <Promise>`
+`exitNow() => <Promise>`  
 Immediately kill all the workers without waiting. The promise is resolved when all the workers have been killed.  
 #### Properties
 `_workers`  
