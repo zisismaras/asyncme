@@ -1,5 +1,6 @@
 # AsyncMe
 ##### Turn blocking code to asynchronous functions
+[![npm version](https://badge.fury.io/js/asyncme.svg)](https://badge.fury.io/js/asyncme)  
 #### Usage
 ```javascript
 const asyncme = require("asyncme")({poolSize: 1, disposable: true});
